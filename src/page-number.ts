@@ -18,8 +18,9 @@ export const paginateWithPages = async (
   let results;
   let nextPage;
   let pageCount = null;
+  let totalCount = null;
+
   if (includePageCount) {
-    let totalCount;
     [results, totalCount] = await Promise.all([
       model.findMany({
         ...query,
@@ -61,6 +62,7 @@ export const paginateWithPages = async (
       previousPage,
       nextPage,
       pageCount,
+      totalCount
     },
   ];
 };

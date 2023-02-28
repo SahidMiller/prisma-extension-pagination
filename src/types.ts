@@ -19,6 +19,7 @@ export type PageNumberPaginationMeta = {
   previousPage: number | null;
   nextPage: number | null;
   pageCount: number | null;
+  totalCount: number | null;
 };
 
 export type CursorPaginationOptions<Result, Condition> = {
