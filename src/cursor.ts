@@ -1,6 +1,6 @@
-import { CursorPaginationMeta } from ".";
-import { resetSelection } from "./helpers";
-import { CursorPaginationOptions, PrismaModel, PrismaQuery } from "./types";
+import { CursorPaginationMeta } from "./index.js";
+import { resetSelection } from "./helpers.js";
+import { CursorPaginationOptions, PrismaModel, PrismaQuery } from "./types.js";
 
 interface PaginateWithCursorOptions<R, C>
   extends CursorPaginationOptions<R, C> {

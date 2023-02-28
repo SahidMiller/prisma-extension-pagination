@@ -6,9 +6,9 @@ import {
   CursorPaginationMeta,
   PrismaModel,
   PrismaQuery,
-} from "./types";
-import { paginateWithPages } from "./page-number";
-import { paginateWithCursor } from "./cursor";
+} from "./types.js";
+import { paginateWithPages } from "./page-number.js";
+import { paginateWithCursor } from "./cursor.js";
 
 export function paginate<T, A>(
   this: T,
